@@ -1,0 +1,73 @@
+请求json样例：
+业务需求样例：
+{
+	"intelligenceType":"1",
+    "busiDemandDOList":[{
+    		"group_id":"1",
+    		"business_type": "1",
+            "expect_fee": "15",
+            "expect_transact_date": "2019-12-16",
+            "linkman_name": "二号",
+            "linkman_msisdn": "13111111111",
+            "remark": "你好",
+            "create_date": "2019-12-16",
+            "create_name": "张三",
+            "create_id": "12345678",
+    		"modify_date":"2019-10-10",
+    		"change_inure_date":"2019-10-10",
+    		"change_expire_date":"2019-10-10"
+    }]
+}
+异动情报样例：
+{
+    "intelligenceType": "2",
+    "transInfoDOList": [
+        {
+            "com_id": "131546513",
+            "group_id": "1",
+            "remark": "你好",
+            "create_date": "2019-12-16",
+            "create_name": "特殊",
+            "create_id": "12345678",
+            "modify_date": "2019-01-01",
+            "change_inure_date": "2019-01-01",
+            "change_expire_date": "2019-01-01",
+            "imgList": [
+                {
+					"com_id":"131546513",
+                    "img_id": "123",
+                    "img_web_addr": "http://localhost:8088/mobile_web/bigdata/app/images/marketAssistant/act_photo_01.jpg",
+                    "order_id": "1"
+                },
+                {
+					"com_id":"131546513",
+                    "img_id": "31213",
+                    "order_id": "2"
+                }
+            ]
+        }
+    ]
+}
+友商业务样例：
+{
+    "intelligenceType": "3",
+    "friendBusiDOList": [
+        {
+            "group_id": "123543",
+            "product_name": "固话 电信",
+            "comp_net_type_name": "电信",
+            "comp_net_type": "1",
+            "expire_date": "2019-12-17",
+            "remark": "备注",
+            "create_date": "2019-12-17",
+            "create_name": "李四",
+            "create_id": "12346",
+            "modify_date": "2019-01-01",
+            "change_inure_date": "2019-01-01",
+            "change_expire_date": "2019-01-01"
+        }
+    ]
+}
+请求参数说明
+1、intelligenceType 情报类型 1：业务需求 2：异动情报 3：友商业务
+2、busiDemandDOList，transInfoDOList，friendBusiDOList 插入的情报信息，可多条不可包含多种
