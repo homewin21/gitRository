@@ -1,3 +1,5 @@
+﻿请求地址:/mobile_web/publish/assistant/gov/customerdetail/intelligence/insertIntellInfo --新增
+/mobile_web/publish/assistant/gov/customerdetail/intelligence/deleteIntellInfo --删除
 请求json样例：
 业务需求样例：
 {
