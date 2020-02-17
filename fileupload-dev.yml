@@ -3,3 +3,5 @@ server:
 spring:
   resources:
     static-locations: file:/
+com:
+  name: homewin
