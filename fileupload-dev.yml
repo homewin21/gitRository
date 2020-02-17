@@ -4,4 +4,4 @@ spring:
   resources:
     static-locations: file:/
 com:
-  name: homewin21
+  name: homewin
