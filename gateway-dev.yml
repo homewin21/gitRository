@@ -27,5 +27,5 @@ spring:
                 name: myfallbackcmd
                 fallbackUri: forward:/fallback
 server:
-  port: 4000
+  port: 4001
 
