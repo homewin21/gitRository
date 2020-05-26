@@ -1,7 +1,13 @@
 server:
-  port: 8000
+  port: 8002
 spring:
   resources:
     static-locations: file:/
-com:
-  name: homewin
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
